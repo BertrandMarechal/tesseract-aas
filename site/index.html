@@ -1,8 +1,29 @@
 <html>
     <head>
         <script type="text/javascript" src="assets/jquery.min.js"></script>
+        <style>
+            .button {
+                background-color: #123456;
+                padding: 10px;
+                max-width: 300px;
+            }
+            .button:hover {
+                background-color: #234567;
+                cursor: pointer;
+            }
+            .button > span{
+                color: white;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
+        <video id="video" width="640" height="480" autoplay style="left:500px;"></video>
+        <canvas id="canvas" width="640" height="480" style="left:500px; display: none;"></canvas>
+        <div id="capture" class="div button">
+            <span>Capture</span>
+        </div>
+        <span id="response"></span>
     </body>
     <script type="text/javascript" src="main.js"></script>
 </html>

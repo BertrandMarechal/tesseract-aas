@@ -1,0 +1,7 @@
+{
+    "watch": [
+        "."
+    ],
+    "ext": "ts",
+    "exec": "cls && ts-node index.ts"
+}
